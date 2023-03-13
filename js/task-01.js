@@ -1,7 +1,7 @@
 // рахує і виведе в консоль кількість категорій
 //  в ul#categories, тобто елементів li.item.
 
-const categoriesItems = document.querySelectorAll('#categories .item');
+const categoriesItems = document.querySelectorAll(' .item');
 console.log(`Number of categories:  ${categoriesItems.length}`);
 
 
