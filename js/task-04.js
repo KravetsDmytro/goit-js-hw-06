@@ -16,15 +16,16 @@ const decrementBtn = document.querySelector('[data-action="decrement"]');
 let totalValue = 0;
 
 
-const clickAdd = () => {
+const clickAdd = (event) => {
+    console.log(event)
     totalValue += 1;
     value.textContent = totalValue;
   };
 
-  const clickRemove =() => {
+  const clickRemove =(eveny) => {
     totalValue -= 1;
     value.textContent = totalValue;
   };
-  
-incrementBtn.addEventListener('click', clickAdd );
+
+incrementBtn.addEventListener('click',  clickAdd );
 decrementBtn.addEventListener('click', clickRemove );
