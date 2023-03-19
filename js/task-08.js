@@ -9,8 +9,8 @@ const { elements : {email, password}
 } = event.currentTarget
 
 if (email.value === '' || password.value === '')
- { alert("введіть ваші данні для реєстрації");
-}
+return   alert("введіть ваші данні для реєстрації");
+
 
 const formData = {
     email: email.value,
