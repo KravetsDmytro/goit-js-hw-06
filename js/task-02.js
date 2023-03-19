@@ -19,13 +19,12 @@ const ingredients = [
 
 const ingridientLi= document.querySelector('#ingredients')
 
-
-// console.log(ingridientLi)
-
-const marcup = ingridientLi.reduce(
-  (acc, ingredient) => acc + document.createElement('li')
-
-)
+ingredients.forEach((item) => {
+  const liElement = document.createElement("li");
+  liElement.classList.add("item");
+  liElement.textContent = item;
+  ingridientLi.appendChild(liElement);
+});
 
 
 
@@ -37,3 +36,13 @@ const marcup = ingridientLi.reduce(
 //  });
  
 
+
+// // console.log(ingridientLi)
+
+// const marcup = ingredients.reduce(
+//   (acc, ingredient) => 
+//  acc + document.createElement('li')
+//  .textContent(${ingredient}) , ""
+// );
+
+// ingredient.innerHTML = ingredient
