@@ -18,14 +18,21 @@ const ingredients = [
 
 
 const ingridientLi= document.querySelector('#ingredients')
+const array = []
 
-ingredients.forEach((item) => {
-  const liElement = document.createElement("li");
-  liElement.classList.add("item");
-  liElement.textContent = item;
-  ingridientLi.appendChild(liElement);
+
+
+ingredients.forEach((ingredient) => {
+  const item = document.createElement("li")
+  item.className= 'item'
+  item.textContent = ingredient
+  array.push(item)
 });
+  ingridientLi.append (...array);
 
+
+// 	liArray.push(item)
+// ingridientLi.append(...liArray)
 
 
 // const ingredientItem = ingredients.map((ingredient) =>{
